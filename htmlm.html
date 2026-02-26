@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assessment Task</title>
+</head>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; } 
+header { background-color: #52aa90; color: white; padding: 10px 0; } 
+nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; } 
+nav ul li { margin: 0 15px; }
+nav ul li a { color: white; text-decoration: none; }
+section { padding: 20px; } 
+table { width: 100%; margin-top: 20px; } 
+th, td { padding: 10px; text-align: left; } 
+form { margin-top: 20px; } 
+article { padding: 20px; background-color: #f4f4f4; margin-top: 20px; }
+footer { background-color: #52aa90; color: white; text-align: center; padding: 10px ; margin-top: 20px; }
+</style>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!--1.Page Structure -->
+    <!-- 2.Lists Section -->
+    <section>
+    <h3>Course Steps</h3>
+    <ol>
+        <li>Html Basics</li>
+        <li>CSS Styling</li>
+        <li>JavaScript</li>
+    </ol>
+    <h3> Tools Used</h3>
+    <ul>
+        <li>VS Code</li>
+        <li>Chrome DevTools</li>
+        <li>GitHub</li>
+    </ul>
+    </section>
+    <!-- 3. Table Section -->
+    <h3>Student Marks Table</h3>
+    <table border="1" style="border-collapse: collapse;">
+        <thead>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Result</th>
+        </thead>
+        <tbody>
+            <tr>
+               <td rowspan="5">San</td>
+               <td>Tamil</td>
+               <td>92</td>
+               <td>P</td>
+            </tr>
+            <tr>
+               <td>English</td>
+               <td>95</td>
+               <td>P</td>
+            </tr>
+            <tr>
+               <td>Maths</td>
+               <td>100</td>
+               <td>P</td>
+            </tr>
+            <tr>
+               <td>Science</td>
+               <td>98</td>
+               <td>P</td>
+            </tr>
+            <tr>
+               <td>Social</td>
+               <td>92</td>
+               <td>P</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 4. Form Section -->
+    <form action="">
+        <fieldset>
+            <legend>
+                <h3>Student Registration Form</h3>
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>       
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <label for="checkbox">Skills</label>
+            <input type="checkbox">HTML
+            <input type="checkbox">CSS      
+            <input type="checkbox">JavaScript<br><br>
+            <label for="country">Country:</label>
+            <select>
+                <option value="">Aasia</option>
+                <option value="">Africa</option>
+                <option value="">Europe</option>
+                <option value="">America</option>
+            </select><br><br>
+            <label>Date Of Birth</label>
+            <input type="date"><br><br>
+            <label for="file"></label>
+            <input type="file"><br><br>
+            <label for="message">Message:</label>
+            <textarea name="text" id="message"></textarea><br><br>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <!-- 5. Embedded Content -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31108.40663875198!2d80.23794584999996!3d12.936565299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525cfbde1d0251%3A0xcafd9a078a3c9270!2sThoraipakkam%2C%20Tamil%20Nadu%20600097!5e0!3m2!1sen!2sin!4v1770898552036!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mstx_8Y2Wps?si=KXCP1eLfPD6oqIkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><br>
+    <iframe src="c:\Users\rebec\Downloads\HTML_Assessment_Task.pdf" type="application/pdf" width="600" height="400">Pfd Not Found</iframe>
+   <!-- 6. Semantic Elements -->
+    <article>
+    <h3>Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+   <footer>
+    <p>&copy; 2024 HTML Assessment Task. All rights reserved.</p>
+   </footer>
+</body>
+</html>
