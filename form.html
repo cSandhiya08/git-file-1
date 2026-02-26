@@ -1,0 +1,53 @@
+<!-- Form validate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <form>
+  <fieldset>
+    <legend>Personal Info</legend>
+
+    <label>Name :</label>
+    <input type="text" id="name" placeholder="Enter The Name"><br><br>
+
+    <label>Age :</label>
+    <input type="number" id="age" placeholder="Enter The Age"><br><br>
+
+    <label>Email :</label>
+    <input type="email" id="email" placeholder="Enter The Email"><br><br>
+
+    <label>Address :</label>
+    <textarea id="address" placeholder="Enter The Address"></textarea><br><br>
+
+    <button type="button" onclick="Submit()">Submit</button>
+  </fieldset>
+</form>
+
+   <script>
+
+    function Submit() {
+    const Iname = document.getElementById("name").value;
+    const Iage = document.getElementById("age").value;
+    const Iemail = document.getElementById("email").value;
+    const Iaddress = document.getElementById("address").value;
+
+    if (Iname === "") {
+        alert("Enter The Name");
+    } else if (Iage === "") {
+        alert("Enter The Age");
+    } else if (Iemail === "") {
+        alert("Enter The Email");
+    } else if (Iaddress === "") {
+        alert("Enter The Address");
+    } else {
+        alert("Form Submitted");
+    }
+}
+
+</script>
+</body>
+</html>
