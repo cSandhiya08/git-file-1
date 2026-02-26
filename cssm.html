@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Assesment</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        margin-top: 20px;
+        background-color: rgba(134, 183, 246, 0.41);
+        padding: 30px;
+        border: 5px solid rgb(134, 183, 246);
+    }
+    .box{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid rgba(134, 183, 246, 0.284);
+        border-radius: 30px;
+    }
+    div img:hover{
+        transform: scale(1.1);
+    }
+
+    .card{
+        margin: 50px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .card img{
+        height: 250px;
+        width: 250px;
+    }
+    .card div{
+        background-color: rgba(134, 183, 246, 0.34);
+        padding: 20px;
+        border-radius: 30px;
+        text-align: center;
+        border: 5px solid rgb(134, 183, 246);
+    }
+</style>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="box">
+        <div>
+            <img src="https://picsum.photos/600/400?random=1" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=2" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=3" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=4" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=5" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=6" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=7" alt="Not Found">
+        </div>
+        <div>
+            <img src="https://picsum.photos/600/400?random=8" alt="Not Found">
+        </div>
+    </div>
+    <h1>Card Image</h1>
+    <div class="card">
+        <div>
+        <img src="https://picsum.photos/600/400?random=9" alt="Not Found">
+        <h2>Card 1</h2>
+        <p>This is a sample card description.</p>
+    </div>
+    <div>
+         <img src="https://picsum.photos/600/400?random=10" alt="Not Found">
+        <h2>Card 2</h2>
+        <p>This is a sample card description.</p>
+    </div>
+    <div>
+         <img src="https://picsum.photos/600/400?random=11" alt="Not Found">
+        <h2>Card 3</h2>
+        <p>This is a sample card description.</p>
+    </div>
+    </div>
+</body>
+</html>
